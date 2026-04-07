@@ -34,7 +34,7 @@ TASK: ${modes[mode] || modes.rewrite}
       },
       body: JSON.stringify({
         model: 'claude-opus-4-5',
-        max_tokens: 1024,
+        max_tokens: 4096,
         stream: true,
         system: systemPrompt,
         messages: [{ role: 'user', content: text }],
